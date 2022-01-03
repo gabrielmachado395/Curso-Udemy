@@ -1,0 +1,4 @@
+"""
+Operadores aritméticos (por ordem)
+(), **, *, /, //, %, + -
+"""

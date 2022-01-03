@@ -1,0 +1,5 @@
+# print(12345)
+# print('Gabriel', 'Machado', sep='-', end='')
+# print('De', 'Freitas',sep='-', end='')
+print('123', '456', '789', '00', sep='.')
+print('', '00', sep='-')
