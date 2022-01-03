@@ -4,9 +4,13 @@ função2 executada.
 """
 
 
-def função1(função2='test'):
-    return função2
+def hello():                    # Aqui será a função que será executada
+    return 'Olá Mundo'
 
 
-var = função1()
+def master(função):             # Aqui onde a função inicial será inserida
+    return função()
+
+
+var = master(hello)             # Aqui onde a função mestre recebe a função inicial para que ela possa ser executada
 print(var)
