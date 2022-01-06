@@ -1,5 +1,5 @@
 """
-Desempacotamento ce listas em Python
+Desempacotamento de listas em Python
 """
 lista = ['Luiz', 'Fernando', 'Pedro', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 n1, n2, *_ = lista
