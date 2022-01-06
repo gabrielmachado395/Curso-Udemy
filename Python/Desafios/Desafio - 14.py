@@ -29,3 +29,20 @@ lista = [
     [5, 3, 1, 8, 5, 7, 1, 8, 8, 7],
     [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
 ]
+
+
+def duplicata(param_lista):
+    duplas = set()
+    primeiro_duplicado = -1
+
+    for numero in param_lista:
+        if numero in duplas:
+            primeiro_duplicado = numero
+            break
+
+        duplas.add(numero)
+    return primeiro_duplicado
+
+
+for lista_inteiros in lista:
+    print(lista_inteiros, duplicata(lista_inteiros))
