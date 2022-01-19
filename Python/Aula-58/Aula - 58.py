@@ -1,4 +1,4 @@
-# Aqui uma classe depende da outra para funcionar
+# Agregação - Aqui uma classe depende da outra para funcionar
 from classes import CarrinhoDeCompras, Produto
 
 carrinho = CarrinhoDeCompras()

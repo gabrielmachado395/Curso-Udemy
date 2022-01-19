@@ -1,4 +1,4 @@
-# Classes associadas entre si são independentes
+# Associação - Classes associadas entre si são independentes
 from classes import Escritor
 from classes import Caneta
 from classes import MaquinaDeEscrever
