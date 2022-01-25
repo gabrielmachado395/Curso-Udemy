@@ -1,6 +1,6 @@
 """
 public - Fica acessível dentro e fora da classe
-protected - '_' é usado para deixar o atributo privado(de maneira masi fraca)
+protected - '_' é usado para deixar o atributo privado(de maneira mais fraca)
 private - '__' é usado para deixar o atributo totalmente privado
 """
 class BaseDeDados:
