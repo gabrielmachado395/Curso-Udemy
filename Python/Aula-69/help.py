@@ -1,0 +1,3 @@
+import test
+
+help(test)
