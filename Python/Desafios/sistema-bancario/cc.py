@@ -2,8 +2,8 @@ from conta import Conta
 
 
 class ContaCorrente(Conta):
-    def __init__(self, agencia, conta, saldo, limite=500):
-        super().__init__(agencia, conta, saldo)
+    def __init__(self, agencia, cliente, conta, saldo, limite=500):
+        super().__init__(agencia, cliente, conta, saldo)
         self._limite = limite
 
     @property

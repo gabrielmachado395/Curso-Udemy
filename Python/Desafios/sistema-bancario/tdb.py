@@ -1,8 +1,6 @@
-from cliente import Cliente
-
-class TesteDeBanco(Cliente):
+class TesteDeBanco():
     def __init__(self):
-        self.__dados = {}
+        self.__dados = {(111, 'Pedro', 222, 0), (333, 'Carla', 444, 8)}
 
     @property
     def dados(self):
@@ -12,19 +10,20 @@ class TesteDeBanco(Cliente):
         if agencia not in self.__dados:
             print(f'Acesso negado, agencia {agencia} inexistente.')
         else:
-            return
+            pass
 
     def checagem_cliente(self, nome):
         if nome not in self.__dados:
-            print(f'Acesso negado, cliente {Cliente} inexistente.')
+            print(f'Acesso negado, cliente {nome} inexistente.')
         else:
-            return
+            pass
 
     def checagem_conta(self, conta, nome):
         if conta not in self.__dados:
             print(f'Acesso negado, conta {conta} inexistente.')
-            return
         else:
             print(f'Acesso liberado. Bem-Vindo(a) {nome}.')
             return
             
+            
+TesteDeBanco(111, 'Pedro', 222, 0)

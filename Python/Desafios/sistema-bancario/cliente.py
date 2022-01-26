@@ -1,9 +1,11 @@
 from pessoa import Pessoa
 
 class Cliente(Pessoa):
-    def __init__(self, agencia, nome, conta):
-        self._agencia = agencia
-        self._nome = nome
-        self._conta = conta
-        return
+    def __init__(self, nome):
+        super().__init__(nome)
+        self._conta = None
+    
+
+    def inserir_conta(self, conta):
+        self.conta = conta
         
