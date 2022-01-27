@@ -1,29 +1,25 @@
 class TesteDeBanco():
     def __init__(self):
-        self.__dados = {(111, 'Pedro', 222, 0), (333, 'Carla', 444, 8)}
+        self.agencias = [1111, 2222, 3333]
+        self.clientes = []
+        self.contas = []
 
-    @property
-    def dados(self):
-        return self.__dados
+    def inserir_cliente(self, cliente):
+        self.clientes.append(cliente)
 
-    def checagem_agencia(self, agencia):
-        if agencia not in self.__dados:
-            print(f'Acesso negado, agencia {agencia} inexistente.')
-        else:
-            pass
+    def inserir_conta(self, conta):
+        self.contas.append(conta)
 
-    def checagem_cliente(self, nome):
-        if nome not in self.__dados:
-            print(f'Acesso negado, cliente {nome} inexistente.')
-        else:
-            pass
+    def checagem(self, cliente):
+        if cliente not in self.clientes:
+            return False
 
-    def checagem_conta(self, conta, nome):
-        if conta not in self.__dados:
-            print(f'Acesso negado, conta {conta} inexistente.')
-        else:
-            print(f'Acesso liberado. Bem-Vindo(a) {nome}.')
-            return
-            
-            
-TesteDeBanco(111, 'Pedro', 222, 0)
+        if cliente.conta not in self.contas:
+            return False
+
+        if cliente.conta.agencia not in self.agencias:
+            return False
+
+        return True
+        
+
